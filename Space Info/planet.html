@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Space Facts</title>
+	<link rel="stylesheet" href="stylesheets/planets.css" />
+</head>
+<body>
+  	<div id="info">
+		<h1 onclick="open_popup()">Planet</h1>
+    	<div class="popup" id="popup">
+			<img id="popup image" src="images/sun.jpg" alt="Planet Image">
+			<button type="button" onclick="close_popup()">X</button>
+		</div>
+    	<table>
+      		<tr><th>Moons:</th><td id="moons"></td></tr>
+      		<tr><th>Distance from Sun:</th><td id="distance"></td></tr>
+      		<tr><th>Orbital Velocity:</th><td id="velocity"></td></tr>
+    	</table>
+    	<h3>Summary:</h3>
+    	<p id="description"></p>
+  	</div>
+
+  	<script src="planets.js"></script>
+</body>
+</html>

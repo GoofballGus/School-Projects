@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    white-space: normal;
+    word-break:break-all;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #00416A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(#E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.info {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 100px;
+    user-select: none;
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+#info {
+    background-size: cover;
+    background-position: center;
+}
+
+.popup {
+    width: 1000px;
+    background: #808080;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 50%;
+    margin-top: 60px;
+    border-radius: 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #545454;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
