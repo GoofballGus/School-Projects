@@ -1,0 +1,30 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(#43cea2, #185a9d) fixed;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#43cea2, #185a9d) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    user-select: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+    background-size: contain;
+}
+
+#cpu_image {
+    max-width: 40%;
+}
+
+div {
+    font-size: 20px;
+}
