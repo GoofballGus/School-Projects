@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../stylesheets/navbar.css">
 </head>
 <body>
+    <span id="move"></span>
     <ul id="navbar">
         <li><a href="../index.html">Home</a></li>
         <li><a href="ram and rom.html">RAM & ROM</a></li>
@@ -16,19 +17,28 @@
         <li><a href="gpus.html" class="active">GPUs</a></li>
         <li><a href="motherboard.html">Motherboards</a></li>
     </ul>
-    <button><a href="../index.html">Back</a></button>
-    <h1 class="no_copy">Graphics Processing Unit: GPU</h1>
-    <div id="title_container">
-        <!-- <div class="info_box no_copy">Files & Programs</div>
-        <div class="info_box no_copy">Read & Write</div>
-        <div class="info_box no_copy">Measurement</div>
-        <div class="info_box no_copy">Volatility</div>
-        <div class="info_box no_copy">Secondary storage</div> -->
-    </div>
-    <div id="text_container">
-        <div class="text_box no_copy">GPUs are dedicated pieces of hardware that are used to display graphics to your monitor.</div>
-        <div class="text_box no_copy">They are also used to do complex mathematical equations. They are designed to do lots of maths quickly as that is what graphics is.</div>
-        <div class="text_box no_copy">They are usually placed in the PCIe slots of the motherbpard.</div>
+
+    <h1 data-popup-target="#gpu-popup">GPU - Graphics Processing Unit</h1>
+	<div class="popup" id="gpu-popup">
+		<img src="../images/B580 GPU.jpg" alt="GPU Image">
+		<button class="close-popup">X</button>
+	</div>
+
+    <div class="text_container">
+        <div class="text_box no_copy">A GPU is a specialized processor designed to render images, videos, and animations.
+									  It handles complex visual and mathematical tasks,</div><div class="text_box no_copy"> offloading them from the CPU increasing computer operating speed.
+									  GPUs are used for gaming, video editing, 3D rendering, and AI tasks.</div>
+		<br>
+        <div class="text_box no_copy">There are two types of GPU. They are:</div>
+		<div class="text_box no_copy">Integrated GPU (iGPU): They are built into the CPU and shares system memory (RAM). They are used for basic tasks as web browsing, video streaming, light gaming.</div>
+		<div class="text_box no_copy">Dedicated GPU (Discrete GPU): This is a separate graphics card with its own VRAM (Video Random Access Memory). It delivers high performance for gaming, 3D rendering, and compute workloads.</div>
+		<br>
+        <div class="text_box no_copy">There are 5 main parts to a GPU:</div>
+		<div class="text_box no_copy">VRAM: Memory used by the GPU (4GB–24GB+ common)</div>
+		<div class="text_box no_copy">Core Clock: Speed of the GPU’s cores (MHz/GHz)</div>
+		<div class="text_box no_copy">CUDA / Stream Cores: Parallel processors (NVIDIA = CUDA, AMD = Stream)</div>
+		<div class="text_box no_copy">TDP: Power draw (affects PSU & cooling needs)</div>
+		<div class="text_box no_copy">Bus Interface: Typically PCIe x16 (check for compatibility)</div>
     </div>
     <script src="../script.js"></script>
 </body>

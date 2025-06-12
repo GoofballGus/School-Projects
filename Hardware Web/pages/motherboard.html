@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../stylesheets/navbar.css">
 </head>
 <body>
+    <span id="move"></span>
     <ul id="navbar">
         <li><a href="../index.html">Home</a></li>
         <li><a href="ram and rom.html">RAM & ROM</a></li>
@@ -16,12 +17,29 @@
         <li><a href="gpus.html">GPUs</a></li>
         <li><a href="motherboard.html" class="active">Motherboards</a></li>
     </ul>
-    <button><a href="../index.html">Back</a></button>
-    <h1 class="no_copy">Motherboards</h1>
-    <div id="text_container">
-        <div class="text_box no_copy">A motherboard is a circuit board that has all the required connections and basic components to let a PC run.</div>
-        <div class="text_box no_copy">It will have things like ROM stored BIOS settings and startup code.</div>
-        <div class="text_box no_copy">Connections like SATA and PCIe will be in a motherboard as well as USB and any external connection ports.</div>
+	
+    <h1 data-popup-target="#motherboard-popup">Motherboards</h1>
+	<div class="popup" id="motherboard-popup">
+		<img src="../images/Motherboard.png" alt="Motherboard Image">
+		<button class="close-popup">X</button>
+	</div>
+	
+    <div class="text_container">
+        <div class="text_box no_copy">A motherboard is the main circuit board of a computer.
+									  It connects and all the major components like the
+		</div><div class="text_box no_copy">CPU, RAM, GPU, storage devices, and power supply.
+									  It also allows them to communicate to each other.</div>
+		<br>
+        <div class="text_box no_copy">It houses the CPU via a socket,
+									  holds RAM slots,
+									  provides PCIe slots for GPUs and expansion cards,
+									  offers SATA / M.2 ports for SSDs and hard drives, </div><div class="text_box no_copy">includes USB, audio, and network ports,
+									  distributes power to components.</div>
+		<br>
+        <div class="text_box no_copy">There are three main form factors. They are:</div>
+		<div class="text_box no_copy">ATX - 12" x 9.6" - Used for full-size builds, and it has most features</div>
+		<div class="text_box no_copy">Micro-ATX (mATX) - 9.6" x 9.6" - Is in smaller cases, and has fewer slots</div>
+		<div class="text_box no_copy">Mini-ITX - 6.7" x 6.7" - Used in compact PCs, and has limited expandability.</div>
     </div>
     <script src="../script.js"></script>
 </body>

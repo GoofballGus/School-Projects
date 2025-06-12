@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../stylesheets/navbar.css">
 </head>
 <body>
+    <span id="move"></span>
     <ul id="navbar">
         <li><a href="../index.html">Home</a></li>
         <li><a href="ram and rom.html" class="active">RAM & ROM</a></li>
@@ -16,26 +17,35 @@
         <li><a href="gpus.html">GPUs</a></li>
         <li><a href="motherboard.html">Motherboards</a></li>
     </ul>
-    <div class="popup" onclick="popup('RAM_popup')">
-        <h1>RAM - Random Access Memory</h1>
-        <span class="popuptext" id="RAM_popup">
-            <img src="../images/RAM.jpg" alt="RAM image" class="popuptext">
-            <h2>Test</h2>
-        </span>
-    </div>
-    <p>Volatile piece of hardware that stores live memory.</p>
-    <p>When you cut the power to RAM all data is lost! It is very fast to be accessed when on.</p>
-    <p>Different RAM speeds are measured in Megahertz (MHz)</p>
-    <p>The two main types of RAM are Dynamic RAM (DRAM) and Static RAM (SRAM).
+	
+	<h1 data-popup-target="#ram-popup">RAM - Random Access Memory</h1>
+	<div class="popup" id="ram-popup">
+		<img src="../images/RAM.jpg" alt="RAM Image">
+		<button class="close-popup">X</button>
+	</div>
+	
+	<div class="text_container">
+        <div class="text_box no_copy">Volatile piece of hardware that stores live memory.</div>
+        <div class="text_box no_copy">When you cut the power to RAM all data is lost! It is very fast to be accessed when on.</div>
+        <div class="text_box no_copy">Different RAM speeds are measured in Megahertz (MHz)</div>
+        <div class="text_box no_copy">The two main types of RAM are Dynamic RAM (DRAM) and Static RAM (SRAM).
         DRAM is widely used as computer main memory, while SRAM is often used for cache memory.
         Within DRAM, there are also variations like Synchronous Dynamic RAM (SDRAM) and Double Data Rate Synchronous Dynamic RAM (DDR SDRAM),
-        like DDR2-5.</p>
+        like DDR2-5.</div>
+    </div>
 
-    <h2>ROM - Read Only Memory</h2>
-    <p>Non-volatile piece of hardware the stores basic instruction such as BIOS.</p>
-    <p>It also stores: Initial boot instructions, hardware initialization routines, and self-test procedures</p>
-    <p>While ROM is very difficult to overwrite it is possible to change it but that is not recommended. You should just get a new chip with what you want in it already.</p>
-
-    <script src="../script.js"></script>
+	<h1 data-popup-target="#rom-popup">ROM - Read Only Memory</h1>
+	<div class="popup" id="rom-popup">
+		<img src="../images/ROM.jpg" alt="ROM Image">
+		<button class="close-popup">X</button>
+	</div>
+	
+	<div class="text_container">
+        <div class="text_box no_copy">Non-volatile piece of hardware the stores basic instruction such as BIOS.</div>
+        <div class="text_box no_copy">It also stores: Initial boot instructions, hardware initialization routines, and self-test procedures.</div>
+        <div class="text_box no_copy">While ROM is very difficult to overwrite it is possible to change it but that is not recommended. You should just get a new chip with what you want in it already.</div>
+    </div>
+	
+	<script src="../script.js"></script>
 </body>
 </html>

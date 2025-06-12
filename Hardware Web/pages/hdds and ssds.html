@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../stylesheets/navbar.css">
 </head>
 <body>
+    <span id="move"></span>
     <ul id="navbar">
         <li><a href="../index.html">Home</a></li>
         <li><a href="ram and rom.html">RAM & ROM</a></li>
@@ -16,21 +17,42 @@
         <li><a href="gpus.html">GPUs</a></li>
         <li><a href="motherboard.html">Motherboards</a></li>
     </ul>
-    <h1 class="no_copy">Hard Drives: HDDs</h1>
-    <div id="title_container">
-        <div class="info_box no_copy">Files & Programs</div>
-        <div class="info_box no_copy">Read & Write</div>
-        <div class="info_box no_copy">Measurement</div>
-        <div class="info_box no_copy">Volatility</div>
-        <div class="info_box no_copy">Secondary storage</div>
-    </div>
-    <div id="text_container">
+	
+    <h1 data-popup-target="#hdd-popup">HDDs - Hard Disk Drives</h1>
+	<div class="popup" id="hdd-popup">
+		<img src="../images/HDD.jpeg" alt="HDD Image">
+		<button class="close-popup">X</button>
+	</div>
+	
+    <div class="text_container">
         <div class="text_box no_copy">Used for long-term storage of files and programs on a computer, including operating systems, software, and documents.</div>
         <div class="text_box no_copy">Generally have read/write speeds ranging from 80 to 160 MB/s.</div>
         <div class="text_box no_copy">2.5-inch, also known as small form factor, and 3.5-inch, or large form factor.</div>
         <div class="text_box no_copy">Non-volatile storage devices, meaning they retain data even when the computer is turned off.</div>
         <div class="text_box no_copy">A type of secondary storage device used in computers to store data and programs permanently.</div>
     </div>
+	
+	<h1 data-popup-target="#ssd-popup">SSDs - Solid State Drives</h1>
+	<div class="popup" id="ssd-popup">
+		<img src="../images/SSD.jpeg" alt="SSD Image">
+		<button class="close-popup">X</button>
+	</div>
+	
+	<div class="text_container">
+        <div class="text_box no_copy">Used in most PCs at the moment as they are much faster and more reliable.</div>
+        <div class="text_box no_copy">They use flash memory similar to USB sticks to store data and do not use
+									  mechanical parts so are silent.</div>
+        <div class="text_box no_copy">Much faster than HDDs. They offer quick boot times, fast file transfers, and
+									  improved system responsiveness. They also use less power.</div>
+        <div class="text_box no_copy">There are several different connections you can use with SSDs such as SATA,
+									  NVMe (M.2 or PCIe) and External with a USB connection.</div>
+        <div class="text_box no_copy">They are limited to a number of read and write cycles per second though but
+									  most users won't notice this.</div>
+		<div class="text_box no_copy">SATA has ~500–550 MB/s as read and ~450–500 MB/s write.</div>
+		<div class="text_box no_copy">NVMe with PCIe 5.0 or later can have ~10,000–14,000 MB/s read and
+									  ~10,000–12,000 MB/s write.</div>
+    </div>
+	
     <script src="../script.js"></script>
 </body>
 </html>

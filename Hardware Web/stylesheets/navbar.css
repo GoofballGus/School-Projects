@@ -8,16 +8,50 @@ ul {
     overflow: hidden;
     background-color: #333;
     border-right: 10px solid #bbb;
+    cursor: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    cursor: none;
+}
+
+#move{
+    z-index: 100;
+    display: inline-block;
+    border-radius: 50%;
+    background: radial-gradient(
+            white,
+            #3984ff00 80%
+    );
+    top: 0;
+    filter: url(#blur-filter);
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+    transform: translate(-50%, -50%);
+    position: fixed;
 }
 
 h1 {
     padding: 10px;
     font-size: 60px;
+    text-decoration-color: blue;
+}
+
+div {
+    font-family: Georgia, serif;
+    font-size: 20px;
 }
 
 li {
     float: left;
     border-right: 1px solid white;
+    cursor: none;
 }
 
 li a {
@@ -26,17 +60,67 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+    cursor: none;
 }
 
 li .active {
     background-color: #04AA6D;
+    cursor: none;
 }
 
 li .active:hover {
     background-color: #04AA6D;
+    cursor: none;
+}
+
+.popup {
+    width: 1000px;
+    max-width: 90%;
+    background: #808080;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 5;
+    cursor: none;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    cursor: none;
+}
+
+.popup img {
+    width: 50%;
+    margin-top: 60px;
+    border-radius: 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: none;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #545454;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: none;
 }

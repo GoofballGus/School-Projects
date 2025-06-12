@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../stylesheets/navbar.css">
 </head>
 <body>
+    <span id="move"></span>
     <ul id="navbar">
         <li><a href="../index.html">Home</a></li>
         <li><a href="ram and rom.html">RAM & ROM</a></li>
@@ -16,13 +17,31 @@
         <li><a href="gpus.html">GPUs</a></li>
         <li><a href="motherboard.html">Motherboards</a></li>
     </ul>
-    <h1>CPUs</h1>
+	
+    <h1 data-popup-target="#cpu-popup">CPU - Central Processing Unit</h1>
+	<div class="popup" id="cpu-popup">
+		<img src="../images/CPU.png" alt="CPU Image">
+		<button class="close-popup">X</button>
+	</div>
 
-    <img src="../images/CPU.png" alt="CPU" id="cpu_image" width="100%">
+	<div class="text_container">
+		<div class="text_box no_copy">The CPU (Central Processing Unit) is often called the “brain” of the computer.
+									  It performs most of the processing tasks, running your operating system,</div>
+		<div class="text_box no_click">apps,
+									  and handling all general instructions your PC needs to function.</div>
+		<div class="text_box no_copy">The CPU then uses the Fetch-Decode-Execution which uses the data to perform the instructions for the app.</div>
+		<br>
+        <div class="text_box no_copy">There are six parts needed for a CPU:</div>
+		<div class="text_box no_copy">Cores - Independent processing units (more cores = better multitasking)</div>
+		<div class="text_box no_copy">Threads - Virtual cores (thanks to SMT/Hyper-Threading)</div>
+		<div class="text_box no_copy">Base/Boost Clock - Speed in GHz; higher = faster, but not always better alone</div>
+		<div class="text_box no_copy">Cache - Fast memory inside the CPU for quick access</div>
+		<div class="text_box no_copy">TDP - Power consumption (affects cooling and PSU needs)</div>
+		<div class="text_box no_copy">Socket Type - Physical connector on motherboard (must match motherboard)</div>
+	</div>
 
-    <p>The CPU fetches data from RAM and a bit from cache. The PC (Progrm Counter) holds the memory address so the CPU knows where it is.</p>
-    <p>The CPU then uses the Fetch-Decode-Execution which uses the data to perform the instructions for the app.</p>
-
-    <img src="../images/CPU_Cycle.png" alt="CPU Cycles" id="cpu_cycles_image" width="100%">
+	<br><br>
+    <img src="../images/CPU_Fetch_Execute_Cycle.png" alt="CPU Fetch Execute Cycle" id="cpu_cycles_image">
+	<script src="../script.js"></script>
 </body>
 </html>

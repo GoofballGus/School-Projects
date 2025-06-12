@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="stylesheets/navbar.css">
 </head>
 <body>
-    <ul id="navbar">
+	<span id="move"></span>
+	<ul id="navbar">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="pages/ram and rom.html">RAM & ROM</a></li>
         <li><a href="pages/hdds and ssds.html">HDDs & SSDs</a></li>
@@ -16,6 +17,19 @@
         <li><a href="pages/gpus.html">GPUs</a></li>
         <li><a href="pages/motherboard.html">Motherboards</a></li>
     </ul>
-    <h1 id="title">This is a website about computer hardware!</h1>
+	<div class="text_container">
+		<h1 data-popup-target="#cpu-popup">This is a website about PC hardware!</h1>
+		<div class="popup" id="cpu-popup">
+			<img src="images/PC.jpg" alt="CPU Image">
+			<button class="close-popup">X</button>
+		</div>
+		<h4 class="text_box no_copy">You can use this website for a basic surface-level overview of what the main
+								  components of a PC are.</h4>
+		<h4 class="text_box no_copy">This website covers: Motherboards, RAM & ROM, HDDs & SSDs, GPUs and CPUs!</h4>
+		<h4 class="text_box no_copy">Just click the button in the navbar to go to the webpage you want.</h4>
+		<h4 class="text_box no_copy">Try clicking the titles of each page, see what happens. Even this one!</h4>
+	</div>
+	
+	<script src="script.js"></script>
 </body>
 </html>

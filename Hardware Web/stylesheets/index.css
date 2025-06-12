@@ -9,10 +9,10 @@ body, html {
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
     overflow: hidden;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
